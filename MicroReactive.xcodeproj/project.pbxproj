@@ -13,6 +13,9 @@
 		497ABDAB1EF6DC3200A1FF82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 497ABDAA1EF6DC3200A1FF82 /* Assets.xcassets */; };
 		497ABDAE1EF6DC3200A1FF82 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 497ABDAC1EF6DC3200A1FF82 /* LaunchScreen.storyboard */; };
 		497ABDB91EF6DC3200A1FF82 /* MicroReactiveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497ABDB81EF6DC3200A1FF82 /* MicroReactiveTests.swift */; };
+		497ABDC91EF6E6C500A1FF82 /* Disposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497ABDC81EF6E6C500A1FF82 /* Disposable.swift */; };
+		497ABDCA1EF6E7B600A1FF82 /* Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497ABDC61EF6E4E400A1FF82 /* Property.swift */; };
+		497ABDD31EF6F1C500A1FF82 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497ABDD21EF6F1C500A1FF82 /* ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,9 @@
 		497ABDB41EF6DC3200A1FF82 /* MicroReactiveTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MicroReactiveTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		497ABDB81EF6DC3200A1FF82 /* MicroReactiveTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MicroReactiveTests.swift; sourceTree = "<group>"; };
 		497ABDBA1EF6DC3200A1FF82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		497ABDC61EF6E4E400A1FF82 /* Property.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Property.swift; sourceTree = "<group>"; };
+		497ABDC81EF6E6C500A1FF82 /* Disposable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Disposable.swift; sourceTree = "<group>"; };
+		497ABDD21EF6F1C500A1FF82 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +65,7 @@
 		497ABD971EF6DC3200A1FF82 = {
 			isa = PBXGroup;
 			children = (
+				497ABDC31EF6E4A100A1FF82 /* Sources */,
 				497ABDA21EF6DC3200A1FF82 /* MicroReactive */,
 				497ABDB71EF6DC3200A1FF82 /* MicroReactiveTests */,
 				497ABDA11EF6DC3200A1FF82 /* Products */,
@@ -83,6 +90,7 @@
 				497ABDAA1EF6DC3200A1FF82 /* Assets.xcassets */,
 				497ABDAC1EF6DC3200A1FF82 /* LaunchScreen.storyboard */,
 				497ABDAF1EF6DC3200A1FF82 /* Info.plist */,
+				497ABDD21EF6F1C500A1FF82 /* ViewModel.swift */,
 			);
 			path = MicroReactive;
 			sourceTree = "<group>";
@@ -94,6 +102,31 @@
 				497ABDBA1EF6DC3200A1FF82 /* Info.plist */,
 			);
 			path = MicroReactiveTests;
+			sourceTree = "<group>";
+		};
+		497ABDC31EF6E4A100A1FF82 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				497ABDCD1EF6EAEB00A1FF82 /* Extensions */,
+				497ABDC71EF6E6BA00A1FF82 /* Protocols */,
+				497ABDC61EF6E4E400A1FF82 /* Property.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		497ABDC71EF6E6BA00A1FF82 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				497ABDC81EF6E6C500A1FF82 /* Disposable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		497ABDCD1EF6EAEB00A1FF82 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,7 +230,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				497ABDD31EF6F1C500A1FF82 /* ViewModel.swift in Sources */,
 				497ABDA61EF6DC3200A1FF82 /* ViewController.swift in Sources */,
+				497ABDC91EF6E6C500A1FF82 /* Disposable.swift in Sources */,
+				497ABDCA1EF6E7B600A1FF82 /* Property.swift in Sources */,
 				497ABDA41EF6DC3200A1FF82 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
